@@ -50,32 +50,45 @@
 
 
 <div class="jumbotron">
-    <h1 class="display-4">What is Docker?</h1>
-    <p class="lead">Docker: is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called Containers. These “containers” are isolated from one another and bundle their own software, libraries and configuration files which can communicate with each other through well-defined channels. All containers are run by a single operating system kernel, which utilizes less resources than traditional virtual machines.</p>
+    <h1 class="display-4">What is PyCharm?</h1>
+    <p class="lead">PyCharm: is an integrated development environment, developed by JetBrains. The IDE is cross-platform and can be installed on Windows, Linux or MAC. It provides code analysis, a graphical debugger, an integrated unit tester, and integration with version control. </p>
     <hr class="my-4">
-    <h3 class="display-4">System Requirements</h3>
-    <p>1: Windows 10 64-bit: Pro, Enterprise, or Education </p>
-    <p>2: Hyper-V and Containers Windows features must be enabled.</p>
-    <p>3: Hardware Hyper-V Prerequisites met: 64 bit processor with Second Level Address Translation (SLAT), 4GB RAM, and BIOS-level hardware virtualization support must be enabled in the BIOS settings.</p>
-    <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=_9AWYlt86B8" role="button">Learn more</a>
-    <hr class="my-4">
-
-
-    <h2 class="display-4">Installation (Windows)</h2>
-    <p> Go to https://docs.docker.com/docker-for-windows/install/</p>
-    <p>1. Double-click Docker Desktop Installer.exe to run the installer.</p>
-    <p>2. When prompted, make sure the Enable Hyper-V Windows Features option is selected on the configuration page.</p>
-    <p>3. Follow the instructions on the installation wizard to authorize the installer and proceed with the install.</p>
-    <p>4. When the installation is successful, click (Close) to complete the installation process.</p>
-    <p>5. If your admin account is different from your user account, you must add the user to the docker-users group. Run Computer Management as an administrator and navigate to  Local Users and Groups > Groups > docker-users. Right-click to add the user to the group. Log out and log back in for the changes to take effect.</p>
-    <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=5nX8U8Fz5S0" role="button">Learn more</a>
+    <h3 class="display-4">What does PyCharm Provide?</h3>
+    <p> •	Coding assistance and analysis, with code completion, syntax and error highlighting, linter integration, and quick fixes</p>
+    <p> •	Project and code navigation: specialized project views, file structure views and quick jumping between files, classes, methods and usages</p>
+    <p> •	Python refactoring: includes rename, extract method, introduce variable, introduce constant, pull up, push down and others</p>
+    <p> •	Support for web frameworks: Django, web2py and Flask [professional edition only] </p>
+    <p> •	Integrated Python debugger</p>
+    <p> •	Integrated unit testing, with line-by-line code coverage</p>
+    <p> •	Google App Engine Python development [professional edition only]</p>
+    <p> •	Version control integration: unified user interface for Mercurial, Git, Subversion, Perforce and CVS with change lists and merge</p>
+    <p> •	Support for scientific tools like matplotlib, numpy and scipy [professional edition only]</p>
     <hr class="my-4">
 
 
+    <h2 class="display-4">Tutorial</h2>
+    <p> Go to your desktop and run PyCharm</p>
+    <p>1. Click on File ---> Settings ---> Build, Execution, Deployment ---> Docker</p>
+    <p>2. Select the docker and add the docker container inside the window using + icon </p>
+    <p>3. Once successful, now we can create the Dockerfile</p>
+    <p>4. Type the following code in the Dockerfile:
+    <p> - FROM python:3</p>
+    <p> - ADD src/src</p>
+    <p> - RUN pip install pystrich</p>
+    <p> - CMD [ "python", "./src/myscript.py" ]</p>
+    <p>5. Commit</p>
+    <p>6. Create the myscript.py As it has to be referenced to the file we entered inside Dockerfile.</p>
+    <p>7. Click on the + and add the Dockerfile, then make sure the following is configured:</p>
+    <p>- Dockerfile: Dockerfile</p>
+    <p>- imagetag: pythongprogramimage</p>
+    <p>- container name:firstpythoncontainer</p>
+    <p>- Select Run Build Image</p>
+    <p>- Click Apply and Ok</p>
+    <p>8. Run the Dockerfile</p>
+    <p>9. Add the Interpreter,select Docker, and make sure the image name is: pythonprogramimagee</p>
+    <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=5zua74p6vjU&feature=youtu.be" role="button">See In Action</a>
+    <hr class="my-4">
 
-<h3 class="display-4">Start Docker</h3>
-    <img src="../img/dockerdesktop.png" alt="Docker Desktop" />
-<p>When the initialization is complete, Docker Desktop launches and presents a getting started tutorial. The tutorial includes a simple exercise to build an example Docker Image, and then run it as a container, push and save the image to Docker Hub.</p>
 
 </div>
 <!-- Optional JavaScript -->

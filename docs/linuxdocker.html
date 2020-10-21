@@ -50,32 +50,24 @@
 
 
 <div class="jumbotron">
-    <h1 class="display-4">What is Docker?</h1>
-    <p class="lead">Docker: is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called Containers. These “containers” are isolated from one another and bundle their own software, libraries and configuration files which can communicate with each other through well-defined channels. All containers are run by a single operating system kernel, which utilizes less resources than traditional virtual machines.</p>
+    <h1 class="display-4">What is Linux?</h1>
+    <p class="lead">Linux: is a family of open-source Unix-like operating systems based on the Linux kernel.</p>
     <hr class="my-4">
-    <h3 class="display-4">System Requirements</h3>
-    <p>1: Windows 10 64-bit: Pro, Enterprise, or Education </p>
-    <p>2: Hyper-V and Containers Windows features must be enabled.</p>
-    <p>3: Hardware Hyper-V Prerequisites met: 64 bit processor with Second Level Address Translation (SLAT), 4GB RAM, and BIOS-level hardware virtualization support must be enabled in the BIOS settings.</p>
-    <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=_9AWYlt86B8" role="button">Learn more</a>
-    <hr class="my-4">
-
-
-    <h2 class="display-4">Installation (Windows)</h2>
-    <p> Go to https://docs.docker.com/docker-for-windows/install/</p>
-    <p>1. Double-click Docker Desktop Installer.exe to run the installer.</p>
-    <p>2. When prompted, make sure the Enable Hyper-V Windows Features option is selected on the configuration page.</p>
-    <p>3. Follow the instructions on the installation wizard to authorize the installer and proceed with the install.</p>
-    <p>4. When the installation is successful, click (Close) to complete the installation process.</p>
-    <p>5. If your admin account is different from your user account, you must add the user to the docker-users group. Run Computer Management as an administrator and navigate to  Local Users and Groups > Groups > docker-users. Right-click to add the user to the group. Log out and log back in for the changes to take effect.</p>
-    <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=5nX8U8Fz5S0" role="button">Learn more</a>
+    <h3 class="display-4">Tutorial</h3>
+    <p>In this tutorial we will demonstrate how to use Docker with some linux commands through the command line. </p>
+    <p>Getting Started: First we must pull the linux image inside the command line.</p>
+    <p>1. Command: docker pull ubuntu - This will pull the ubuntu image.</p>
+    <img src="../img/pullubuntu.png" alt="Docker Pull Ubuntu" />
+    <p>2. Use the "Docker Images" to check the existing Docker Images on your computer.</p>
+    <p>3. Command: docker run -it ubuntu:latest /bin/bash - this will run Ubuntu to start a docker container, and logs in the Ubuntu container.</p>
+    <p>4. Command: apt-get update - this command will allow you to install applications in the linux container.</p>
+    <p>5. Command: apt-get install apache2 - this command will allow you to install an apache server within the container.</p>
+    <p>6. Command: exit - this command closes the container.</p>
+    <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=OSM8aw8G1kk" role="button">See In Action</a>
     <hr class="my-4">
 
 
 
-<h3 class="display-4">Start Docker</h3>
-    <img src="../img/dockerdesktop.png" alt="Docker Desktop" />
-<p>When the initialization is complete, Docker Desktop launches and presents a getting started tutorial. The tutorial includes a simple exercise to build an example Docker Image, and then run it as a container, push and save the image to Docker Hub.</p>
 
 </div>
 <!-- Optional JavaScript -->
