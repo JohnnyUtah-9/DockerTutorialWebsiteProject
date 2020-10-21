@@ -1,10 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title> Comparison</title>
 </head>
-<body>
 
+<style>
+
+    body{
+        background-color: lightgrey;
+    }
+    h1 {
+        text-align: center;
+    }
+    .banner {
+        width: 100%;
+        height: 400px;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .resources {
+        column-count: 2;
+        column-gap: 40px;
+        column-rule-style: solid;
+        column-rule-width: 1px;
+    }
+    }
+
+</style>
+
+<body>
+<div class="container">
+    <img class="banner" src="../img/compare.jpg" alt="Comparison"</div>
+</div>
+
+<h1>
+    What are the Differences between containerization and virtuaization?
+</h1>
+<h2> Containierzation</h2>
+<p> Containerization is a less resource intensive alternative to machine virtualization that involves encapsulating an application in a container from inside its own operating environment.
+Containers use the same host operating system (OS) instead of installing an OS for each guest VM and
+Containers also provide a way to isolate applications and provide a virtual platform for applications to run on. </p>
+<img src="../img/container.png">
+
+<<h2> Virtualization</h2>
+<p>Virtualization is diffierent from containers in that virtual machines are copies of a server, meaning that any Virtual Machine has its own Operating System. The replication of binaries and libraries between different Virtual Machines running on the same server tie up significant server resources thereby slowing down processing time. </p>
+<iframe width="1103" height="480" src="https://www.youtube.com/embed/RBDJua2I3cg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
